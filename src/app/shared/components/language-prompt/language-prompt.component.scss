@@ -1,0 +1,17 @@
+::ng-deep .language-prompt {
+    position: absolute;
+    z-index: 99999;
+    width: 100%;
+    //height: 100%;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+
+    .content {
+        background: #f5f1ff;
+        padding: 10px;
+        border-radius: 10px;
+    }
+}
