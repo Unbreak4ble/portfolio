@@ -1,0 +1,7 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    width: calc(100% - 10px*2);
+    padding: 10px;
+    background: #040404;
+}

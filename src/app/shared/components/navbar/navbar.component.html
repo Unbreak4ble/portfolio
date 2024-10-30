@@ -1,0 +1,10 @@
+<div class="navbar">
+    <div class="left">
+        
+    </div>
+    <div class="right">
+        @for(item of items; track item){
+            <a (click)="onclick?.(item.id)">{{ item.value }}</a>
+        }
+    </div>
+</div>
