@@ -1,0 +1,12 @@
+.skills {
+    width: 100%;
+    background: black;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+
+    .skills-title {
+        font-size: 50px;
+    }
+}

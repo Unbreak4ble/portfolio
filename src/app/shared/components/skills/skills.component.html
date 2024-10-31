@@ -1,1 +1,10 @@
-<p>skills works!</p>
+<div class="skills">
+    <div class="skills-title">
+        <a>Skills</a>
+    </div>
+    <div class="skills-list">
+        @for(item of items; track item){
+            <app-skill-badge [type]="item"></app-skill-badge>
+        }
+    </div>
+</div>

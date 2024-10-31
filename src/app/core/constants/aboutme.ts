@@ -7,7 +7,7 @@ export const aboutme:any = {
             type: "computer_programming",
             method: "Main",
             languages: ["C#", "Javascript", "Typescript", "Bash", "Rust", "C", "C++", "Assembly", "Python", "Html", "CSS"],
-            OS: ["Linux"],
+            os: ["Linux"],
             databases: ["MongoDB"],
             devops: ["Docker"],
             frameworks: ["Asp.NET", "NodeJS", "AngularJS"],

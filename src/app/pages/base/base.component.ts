@@ -12,8 +12,10 @@ import { FooterComponent } from '../../shared/components/footer/footer.component
 })
 export class BaseComponent {
   @ViewChild("navbar") navbar_component:NavbarComponent|null = null;
+  @ViewChild("router") router_component:RouterOutlet|null = null;
 
   ngAfterViewInit(){
+    console.log("rowter: ", this.router_component);
     const onclick = (id:string) => {
       alert("scrolling to: "+id);
     }
