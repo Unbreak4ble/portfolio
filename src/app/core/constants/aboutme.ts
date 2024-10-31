@@ -5,27 +5,33 @@ export const aboutme:any = {
         {
             name: "Programmer",
             type: "computer_programming",
+            background: "../../../../../assets/backgrounds/coding.jpg",
             method: "Main",
-            languages: ["C#", "Javascript", "Typescript", "Bash", "Rust", "C", "C++", "Assembly", "Python", "Html", "CSS"],
-            os: ["Linux"],
-            databases: ["MongoDB"],
-            devops: ["Docker"],
-            frameworks: ["Asp.NET", "NodeJS", "AngularJS"],
-            softwares: ["vs code", "vim", "gdb", "ghidra"],
+            knowledges: [
+            "CSharp", "Javascript", "Typescript", "Lua", "Bash", "Rust", "C", "CPP", "Assembly", "Python", "Html", "CSS", "SCSS",
+            "Linux", "qt",
+            "MongoDB",
+            "Docker",
+            "ASP.NET", "NodeJS", "AngularJS",
+            "git",
+            ],
+            softwares: ["vscode", "vim", "ghidra"],
             others: ["Embedded"]
         },
         {
             name: "Video Editor",
             type: "video_editor",
             method: "Hobby",
+            background: "../../../../../assets/backgrounds/video_editor.jpeg",
             softwares: [
-                "Davinci Resolve Studio"
+                "davinci"
             ]
         },
         {
             name: "Electronics Technician",
             type: "circuits",
             method: "Hobby",
+            background: "../../../../../assets/backgrounds/ciruits_CI.jpg",
             softwares: []
         }
     ]

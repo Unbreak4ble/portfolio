@@ -7,6 +7,58 @@
     color: white;
 
     .skills-title {
-        font-size: 50px;
+        font-size: 60px;
+    }
+
+    .skills-list {
+        display: flex;
+        flex-direction: column;
+        //gap:10px;
+        width: calc(100% - 20px*2);
+        padding: 20px;
+
+        .skill {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+            overflow: hidden;
+
+            .content-left {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                width: 50%;
+                height: 100vh;
+                z-index: 1;
+                background: black;
+                box-shadow: 10px 10px 200px 200px black;
+
+                .skill-head {
+                    font-size: 40px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 100%;
+                }
+
+                .skill-knowledges {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10px;
+                    flex-wrap: wrap;
+                }
+            }
+            .background-right {
+                position: absolute;
+                width: 100%;
+                height: 100vh;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
     }
 }

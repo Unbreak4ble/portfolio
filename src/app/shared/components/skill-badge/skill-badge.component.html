@@ -1,1 +1,12 @@
-<p>skill-badge works!</p>
+<div class="skill-badge">
+    @if(icon != null){
+        <div class="icon">
+            <img src="{{ icon }}" draggable="false">
+        </div>
+    }
+    @if(name != null){
+        <div class="name">
+            <a>{{ name }}</a>
+        </div>
+    }
+</div>

@@ -3,8 +3,22 @@
         <a>Skills</a>
     </div>
     <div class="skills-list">
-        @for(item of items; track item){
-            <app-skill-badge [type]="item"></app-skill-badge>
+        @for(skill of skills; track skill){
+            <div class="skill">
+                <div class="content-left">
+                    <div class="skill-head">
+                        <a>{{ skill.name }}</a>
+                    </div>
+                    <div class="skill-knowledges">
+                        @for(knowledge of skill.knowledges; track knowledge){
+                            <app-skill-badge [type]="knowledge"></app-skill-badge>
+                        }
+                    </div>
+                </div>
+                <div class="background-right">
+                    <img src="{{ skill.background }}" draggable="false"/>
+                </div>
+            </div>
         }
     </div>
 </div>

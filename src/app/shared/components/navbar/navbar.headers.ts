@@ -3,8 +3,8 @@
 export const headers:any = {
     items: [
         {
-            id: "home",
-            value: "home"
+            id: "me",
+            value: "me"
         },
         {
             id: "skills",

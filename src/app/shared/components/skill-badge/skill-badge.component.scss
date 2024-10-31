@@ -1,0 +1,25 @@
+.skill-badge {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    align-items: center;
+
+    .icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        overflow: hidden;
+        user-select: none;
+        
+        img {
+            width: 50px;
+            height: 50px
+        }
+    }
+
+    .name {
+
+    }
+}
