@@ -26,6 +26,7 @@
             color: white;
             min-width: 100px;
             cursor: pointer;
+            overflow: hidden;
 
             .project-head {
                 width: 100%;
@@ -37,7 +38,7 @@
 
                 .project-head-left {
                     a {
-                        font-size: 20px;
+                        font-size: 25px;
                     }
                 }
                 .project-head-right {
@@ -46,6 +47,24 @@
                         height: 30px;
                     }
                 }
+            }
+
+            .project-body {
+                .project-body-stars {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 5px;
+                }
+            }
+
+            .project-languages-color {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 5px;
+                background: white;
             }
         }
     }

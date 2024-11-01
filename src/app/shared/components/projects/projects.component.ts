@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { aboutme } from '../../../core/constants/aboutme';
+import { aboutme } from '../../../core/constants/me/aboutme';
 import { GitapiService } from '../../../core/services/gitapi/gitapi.service';
 
 @Component({
@@ -28,11 +28,15 @@ export class ProjectsComponent {
 
     const username = gh_profile.username;
 
+    //const repos = [{name: "a-star", stargazers_count:10, language: "Rust", svn_url:"putaquetepariu", fork:false}]; 
     const repos = await this.gitapiService.listRepositories(username);
 
     const projects = repos.filter((x:any) => x.fork == false);
 
-    this.github_projects = projects;
+    this.github_projects = projects.map((x:any) => {
+      x.language_color = this.gitapiService.languageToColor(x.language);
+      return x;
+    });
   }
   
   gotoProject(url:string|null){
