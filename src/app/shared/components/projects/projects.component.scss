@@ -9,4 +9,44 @@
     .projects-title {
         font-size: 50px;
     }
+
+    .projects-list {
+        width: calc(100% - 20px*2);
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        .project {
+            position: relative;
+            padding: 10px;
+            border-radius: 15px;
+            background: #37373f;
+            color: white;
+            min-width: 100px;
+            cursor: pointer;
+
+            .project-head {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                gap: 10px;
+
+                .project-head-left {
+                    a {
+                        font-size: 20px;
+                    }
+                }
+                .project-head-right {
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+        }
+    }
 }

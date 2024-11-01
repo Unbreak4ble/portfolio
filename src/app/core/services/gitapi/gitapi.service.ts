@@ -13,5 +13,9 @@ export class GitapiService {
 
   async listRepositories(username:string) {
     const url = this.makeListRepositoriesURL(username);
+
+    const response = await fetch(url);
+
+    return await response.json();
   }
 }

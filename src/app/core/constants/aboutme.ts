@@ -1,6 +1,18 @@
 export const aboutme:any = {
     name: "Rafael Melo Fernandes",
     description: "",
+    profiles: [
+        {
+            name: "GitHub",
+            type: "github",
+            username: "unbreak4ble"
+        },
+        {
+            name: "Discord",
+            type: "discord",
+            username: "herous_"
+        }
+    ],
     skills: [
         {
             name: "Programmer",

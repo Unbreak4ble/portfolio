@@ -2,4 +2,18 @@
     <div class="projects-title">
         <a>Projects</a>
     </div>
+    <div class="projects-list">
+        @for(project of github_projects; track project){
+            <div class="project" (click)="gotoProject(project.svn_url)">
+                <div class="project-head">
+                    <div class="project-head-left">
+                        <a>{{ project.name }}</a>
+                    </div>
+                    <div class="project-head-right">
+                        <img draggable="false" src="../../../../assets/skills/github-auto.svg"/>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
 </div>
