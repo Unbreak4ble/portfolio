@@ -7,10 +7,18 @@
             <div class="skill">
                 <div class="content-left">
                     <div class="skill-head">
-                        <a>{{ skill.name }}</a>
+                        <div class="skill-head-title">
+                            <a>{{ skill.name }}</a>
+                        </div>
+                        <div class="skill-head-method">
+                            <a>{{ skill.method }}</a>
+                        </div>
                     </div>
                     <div class="skill-knowledges">
                         @for(knowledge of skill.knowledges; track knowledge){
+                            <app-skill-badge [type]="knowledge"></app-skill-badge>
+                        }
+                        @for(knowledge of skill.softwares; track knowledge){
                             <app-skill-badge [type]="knowledge"></app-skill-badge>
                         }
                     </div>

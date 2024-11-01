@@ -155,4 +155,14 @@ export const badges_list: any[] = [
         type: "davinci",
         icon: "davinci"
     },
+    {
+        name: "Arduino",
+        type: "arduino",
+        icon: "arduino"
+    },
+    {
+        name: "Ghidra",
+        type: "ghidra",
+        icon: "ghidra"
+    },
 ]

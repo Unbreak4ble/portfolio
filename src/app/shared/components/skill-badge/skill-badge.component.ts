@@ -28,7 +28,7 @@ export class SkillBadgeComponent {
 
     const badge = badges_found[0];
     
-    this.icon = "../../../assets/skills/"+badge.icon+".svg";
+    this.icon = this.iconService.makeLocalIcon(badge.icon);
     this.name = badge.name;
   }
 }

@@ -4,7 +4,7 @@ export const aboutme:any = {
     skills: [
         {
             name: "Programmer",
-            type: "computer_programming",
+            type: "computer_programmer",
             background: "../../../../../assets/backgrounds/coding.jpg",
             method: "Main",
             knowledges: [
@@ -14,6 +14,7 @@ export const aboutme:any = {
             "Docker",
             "ASP.NET", "NodeJS", "AngularJS",
             "git",
+            "arduino",
             ],
             softwares: ["vscode", "vim", "ghidra"],
             others: ["Embedded"]
