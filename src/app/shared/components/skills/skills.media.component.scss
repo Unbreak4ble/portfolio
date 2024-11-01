@@ -11,9 +11,11 @@
                 flex-direction: column;
 
                 .content-left {
+                    position: relative;
                     width: calc(100% - 20px*2);
-                    top: 200px;
+                    top: -150px;
                     box-shadow: 0px 0px 100px 100px black;
+                    min-height: 50vh;
 
                     .skill-head {
                         display: flex;
@@ -28,8 +30,10 @@
                 }
 
                 .background-right {
+                    position: relative;
                     top: 0;
                     height: 50vh;
+                    user-select: none;
                 }
             }
         }

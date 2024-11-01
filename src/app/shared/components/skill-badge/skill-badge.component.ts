@@ -17,7 +17,8 @@ export class SkillBadgeComponent {
   constructor(private iconService:IconService){
   }
 
-  ngAfterViewInit(){
+  //ngAfterViewInit(){
+  ngAfterContentInit(){
     this.showBadge();
   }
 

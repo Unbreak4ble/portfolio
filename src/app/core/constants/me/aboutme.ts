@@ -15,8 +15,8 @@ export const aboutme:any = {
     ],
     skills: [
         {
-            name: "Programmer",
-            type: "computer_programmer",
+            name: "Programming",
+            type: "computer_programs",
             background: "../../../../../assets/backgrounds/coding.jpg",
             method: "Main",
             knowledges: [
@@ -32,8 +32,8 @@ export const aboutme:any = {
             others: ["Embedded"]
         },
         {
-            name: "Video Editor",
-            type: "video_editor",
+            name: "Video Editing",
+            type: "video_editing",
             method: "Hobby",
             background: "../../../../../assets/backgrounds/video_editor.jpeg",
             softwares: [
@@ -41,7 +41,7 @@ export const aboutme:any = {
             ]
         },
         {
-            name: "Electronics Technician",
+            name: "Circuits",
             type: "circuits",
             method: "Hobby",
             background: "../../../../../assets/backgrounds/ciruits_CI.jpg",
