@@ -15,5 +15,6 @@ export class SkillsComponent {
 
   constructor(){
     //console.log(this.skills);
+    console.log("hi there");
   }
 }
