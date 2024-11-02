@@ -1,3 +1,17 @@
 <div class="footer">
-    <a>footer? Not here, yet.</a>
+    <div class="contacts">
+        @for(social of socials;track social){
+            <div class="contact">
+                <div class="icon">
+                    <img src="{{ social.icon }}" draggable="false"/>
+                </div>
+                <div class="username">
+                    <a>{{ social.username }}</a>
+                </div>
+            </div>
+        }
+    </div>
+    <div class="copyright">
+        <a>Copyright</a><a> © </a><a>{{ year }}</a><a>|</a><a>{{ full_name }}</a>
+    </div>
 </div>

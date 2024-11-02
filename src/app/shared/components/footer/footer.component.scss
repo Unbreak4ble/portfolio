@@ -1,8 +1,47 @@
 .footer {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
     display: flex;
-    flex-direction: row;
-    width: calc(100% - 10px*2);
-    padding: 10px;
-    background: #040404;
+    flex-direction: column;
+    gap: 20px;
+    //justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 20px*2);
+    padding: 20px;
+    background: #0a0a0a;
     color: white;
+
+    .copyright {
+        color: grey;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap:5px;
+    }
+
+    .contacts {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+
+        .contact {
+            display: flex;
+            flex-direction: row;
+            //align-items: center;
+            gap: 5px;
+
+            .icon {
+                img {
+                    color: white;
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+
+            .username {
+                color: grey;
+            }
+        }
+    }
 }

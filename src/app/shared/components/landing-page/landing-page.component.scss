@@ -1,9 +1,29 @@
+@import "./landing-page.media.component.scss";
+
 @keyframes init-shadow {
     from {
         width: 0;
     }
     to {
         width: 50%;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    /*25% {
+        background-position: 50% 100%;
+    }*/
+    50% {
+        background-position: 100% 100%;
+    }
+    /*75% {
+        background-position: 50% 100%;
+    }*/
+    100% {
+        background-position: 0% 50%;
     }
 }
 
@@ -22,7 +42,10 @@
         width: 100%;
         height: 100%;
         //background: linear-gradient(to bottom, #7503fc, #936dfe);
-        background: black;
+        //background: black;
+        background: linear-gradient(to top, black, #1f1c25, #1d1b22);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
         //background: linear-gradient(to right, black, #7503fc);
     }
 
@@ -33,19 +56,38 @@
         font-size: 20px;
         padding: 20px;
         color: white;
+        width: 100%;
         height: 90%;
+
+        .lp-content-head {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            font-size: 100px;
+        }
         
         .lp-content-me {
             display: flex;
             flex-direction: column;
+            width: 50%;
             justify-content: space-between;
             align-items: center;
             font-size: 20px;
             padding: 20px;
             color: white;
+            
             .lp-title {
                 font-size: 50px;
             }
+        }
+
+        .lp-content-progress {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            justify-content: space-between;
+            align-items: center;
         }
     }
 }

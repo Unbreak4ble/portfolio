@@ -9,8 +9,12 @@ import { Component } from '@angular/core';
 })
 export class TeletypeAnimationComponent {
   private texts:string[] = [];
+  private running:boolean = true;
   current_text:string = "";
   interval:number = 1;
+  once:boolean = false;
+  letter_interval:number = 200;
+  word_interval:number = 3000;
   teletype_dash_flicker:string = '_';
 
   constructor(){
@@ -27,7 +31,13 @@ export class TeletypeAnimationComponent {
   }
 
   setupFlicker(){
-    setInterval((()=>{
+    const interval = setInterval((()=>{
+      if(!this.running){ 
+        this.teletype_dash_flicker = '';
+        clearInterval(interval);
+        return;
+      }
+
       if(this.teletype_dash_flicker == '_')
         this.teletype_dash_flicker = '';
       else
@@ -36,18 +46,22 @@ export class TeletypeAnimationComponent {
   }
 
   async setupEngine(){
-    for(let i=0;; i++){
-      if(i+1 >= this.texts.length) i=0;
+    this.running = true;
 
-      console.log("go for launch");
-      for(const letter of this.texts[i]){
-        this.current_text += letter;
-        await new Promise(resolve => setTimeout(resolve, 200));
-      }
-      
-      await new Promise(resolve => setTimeout(resolve, 3000));
+    for(let i=0;; i++){
+      if(i+1 > this.texts.length && this.once) break;
+      if(i+1 > this.texts.length) i=0;
 
       this.current_text = "";
+
+      for(const letter of this.texts[i]){
+        this.current_text += letter;
+        await new Promise(resolve => setTimeout(resolve, this.letter_interval));
+      }
+      
+      await new Promise(resolve => setTimeout(resolve, this.word_interval));
     }
+
+    this.running = false;
   }
 }

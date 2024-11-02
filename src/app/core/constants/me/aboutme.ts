@@ -1,15 +1,18 @@
 export const aboutme:any = {
-    name: "Rafael Melo Fernandes",
-    description: "Hello !!!",
+    name: "Rafael",
+    last_name: "Melo Fernandes",
+    description: "Started programming in 2019 when i was 14. What do you expect from me? Well... See my projects and take your conclusions.",
     profiles: [
         {
             name: "GitHub",
             type: "github",
+            icon: "../../../../../assets/social_net_icons/github_light.png",
             username: "unbreak4ble"
         },
         {
             name: "Discord",
             type: "discord",
+            icon: "../../../../../assets/social_net_icons/discord.ico",
             username: "herous_"
         }
     ],
