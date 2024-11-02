@@ -1,6 +1,6 @@
 export const aboutme:any = {
     name: "Rafael Melo Fernandes",
-    description: "",
+    description: "Hello !!!",
     profiles: [
         {
             name: "GitHub",

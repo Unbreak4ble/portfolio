@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { aboutme } from '../../../core/constants/me/aboutme';
 import { GitapiService } from '../../../core/services/gitapi/gitapi.service';
+import { projects } from '../../../core/constants/me/projects';
 
 @Component({
   selector: 'app-projects',
@@ -10,7 +11,7 @@ import { GitapiService } from '../../../core/services/gitapi/gitapi.service';
   styleUrl: './projects.component.scss'
 })
 export class ProjectsComponent {
-  projects: any[] = [];
+  projects: any[] = projects;
   github_projects: any[] = [];
 
   constructor(private gitapiService: GitapiService){

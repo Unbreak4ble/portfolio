@@ -1,0 +1,9 @@
+.teletype {
+    display: flex;
+    flex-direction: row;
+    gap: 1px;
+
+    #teletype_dash_flicker {
+        min-width: 2rem;
+    }
+}
