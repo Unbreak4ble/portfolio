@@ -1,0 +1,17 @@
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.base {
+    background: linear-gradient(to top, black, black, #1f1c25, #1d1b22, #1c1824);
+    background-size: 600% 600%;
+    animation: gradient 10s ease infinite;
+}

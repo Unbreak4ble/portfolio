@@ -3,7 +3,9 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background: #040404;
+    //background: #040404;
+    background: #04040420;
+    backdrop-filter: blur(10px);
     color: #fefefe;
     width: calc(100% - 10px*2);
     padding: 10px;
