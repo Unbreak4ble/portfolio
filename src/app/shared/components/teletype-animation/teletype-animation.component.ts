@@ -15,6 +15,7 @@ export class TeletypeAnimationComponent {
   once:boolean = false;
   letter_interval:number = 200;
   word_interval:number = 3000;
+  delete_letter_interval:number = 100;
   teletype_dash_flicker:string = '_';
 
   constructor(){
@@ -52,7 +53,10 @@ export class TeletypeAnimationComponent {
       if(i+1 > this.texts.length && this.once) break;
       if(i+1 > this.texts.length) i=0;
 
-      this.current_text = "";
+      for(;this.current_text.length > 0;){
+        this.current_text = this.current_text.slice(0, this.current_text.length-1);
+        await new Promise(resolve => setTimeout(resolve, this.delete_letter_interval));
+      }
 
       for(const letter of this.texts[i]){
         this.current_text += letter;

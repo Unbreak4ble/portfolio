@@ -3,14 +3,19 @@
     .lp-main {
         .lp-content  {
             .lp-content-head {
-                font-size: 35px !important;
+                font-size: 40px !important;
             }
-            .lp-content-me {
-                width: calc(100% - 10px*2) !important;
-                padding: 10px !important;
 
-                .lp-title {
-                    font-size: 20px !important;
+            .lp-content-body {
+                min-height:30vh !important;
+
+                .lp-content-me {
+                    width: calc(100% - 10px*2) !important;
+                    padding: 10px !important;
+
+                    .lp-title {
+                        font-size: 30px !important;
+                    }
                 }
             }
         }
